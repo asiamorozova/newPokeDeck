@@ -1,4 +1,5 @@
 import React from "react";
+import "./List.css";
 
 export default class List extends React.Component {
   render() {
@@ -7,9 +8,8 @@ export default class List extends React.Component {
     console.log(pokemonObj);
     return (
       <div>
-        <p>
-          <img src={url_image} alt={url_image} />
-        </p>
+        <img src={url_image} alt={url_image} />
+
         <p>name: {pokemon}</p>
         <p>Type: {type_1} </p>
         <p>Speed: {speed} </p>

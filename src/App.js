@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Route, Switch, Link, BrowserRouter as Router } from "react-router-dom";
-
+import "./App.css";
 import Detail from "./Details.js";
 import Home from "./Home.js";
 import About from "./About.js";
@@ -10,7 +10,7 @@ export default class App extends Component {
   render() {
     return (
       <Router>
-        <div>
+        <div className="container">
           <h2>Pokemon</h2>
           <Link to="/">go home</Link>
           <Link to="/about-me/a">about me</Link>

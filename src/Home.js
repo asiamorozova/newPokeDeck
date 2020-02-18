@@ -3,6 +3,7 @@ import request from "superagent";
 import List from "./List.js";
 import SearchBar from "./Searchbar.js";
 import { Link } from "react-router-dom";
+import "./Home.css";
 
 export default class Home extends Component {
   state = {
@@ -44,9 +45,11 @@ export default class Home extends Component {
         </header>
         <ul>
           {this.state.characters.map(character => (
-            <Link to={`characters/${character.pokemon}`}>
-              <List pokemonObj={character} />
-            </Link>
+            <div className="list-items">
+              <Link to={`characters/${character.pokemon}`}>
+                <List pokemonObj={character} />
+              </Link>
+            </div>
           ))}
         </ul>
       </div>
