@@ -1,0 +1,18 @@
+* {
+  margin-left: 1em;
+}
+a {
+  margin-left: 1em;
+}
+p {
+  width: 50%;
+}
+input,
+button {
+  width: 200px;
+  border-radius: 4px;
+  border: 1px solid blueviolet;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  margin-top: 2em;
+}
